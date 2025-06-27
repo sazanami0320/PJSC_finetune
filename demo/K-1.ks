@@ -8,9 +8,11 @@
 ;[剧本注]参考野良猫整活的风格
 ;[剧本注]这段感觉对程序和配音是不是极不友好，要不不配了（
 ——2025年，人类陷入了空前未有的危机中。 [w]
+@fadeinbgm storage="invade_1" time="1000"
 @backlay
 @image layer="stage" page="back" storage="k1_worldmap" visible="true"
 @trans method="crossfade" time="700"
+@wb
 @wt
 神秘UFO降落在七大洲的各个角落，而从中出现的是不计其数的外星侵略者。 [w]
 @backlay
@@ -18,7 +20,6 @@
 @trans method="crossfade" time="700"
 @wt
 它们如同潮水一般涌入城市与街道，挥舞着长长的触手摧毁建筑，卷走居民—— [w]
-@se storage="invade_1"
 @ws canskip="true"
 @npc id="女性"
 啊————————! [w]
@@ -71,6 +72,8 @@
 ;==End Transition==
 触手外星人继续在建筑群中肆虐，城里的居民们无助地奔逃着。 [w]
 但是，人类的希望仍然没有消失。 [w]
+@fadepausebgm time="500"
+@wb
 @npc id="声音"
 你，相信魔法吗？ [w]
 @npc id="男性"
@@ -87,15 +90,21 @@
 好的——你们的愿望，我都已经听到了！ [w]
 @npc id="声音"
 魔法少女阿莉厄丝酱，闪亮登场☆~ [w]
+@playse storage="magic_1" 
 话音未落，一道人影从慌乱逃窜地人群头顶飞过，来到外星人面前。 [w]
 @npc id="母亲"
 啊，是魔法少女阿莉厄丝酱！ [w]
 @npc id="男性"
 太好了，是魔法少女阿莉厄丝酱！我们有救了！ [w]
+@resumebgm
+@bgmopt volume="100"
 魔法少女在空中轻盈的飞舞着，用灵活的身姿躲避开从四面八方袭来的触手，来到侵略者的面前。 [w]
 紧接着，她对着眼前的怪物毫不迟疑地挥出手中的武器——一根装饰精美、有着心形前端的手杖。 [w]
+@playse storage="cut_knife_1"
 发出尖锐爆鸣声的手杖轻松突破了连炮弹都无法击穿的防御，以奇快无比的速度在一瞬间切断了怪物伸出的触手。 [w]
+@playse storage="roar_monster"
 章鱼人痛得在地上打起了滚，而阿莉厄丝酱则再轻轻一挥手杖，之前被触手抓住的人们便在光芒的包裹中缓缓落地。 [w]
+@playse storage="magic_2"
 @npc id="女性"
 谢谢你，阿莉厄丝酱！ [w]
 @阿莉厄丝酱
@@ -106,23 +115,26 @@
 唔嗯嗯？ [w]
 不知何时从背后钻出来的另一只章鱼人突然伸出触手袭击了阿莉厄丝酱，将她的武器击落在地。 [w]
 @se storage="tentacle_1"
-@ws canskip="true"
 还没等她反应过来，其他触手便爬上了她的四肢与腰间，将她紧紧地拘束住。 [w]
 @npc id="女孩"
 阿莉厄丝酱——————！ [w]
+@se storage="tighten_rope"
 魔法少女阿莉厄丝酱一边惊呼着，一边被缠满她身体的触手们高高举起。 [w]
-眼看着阿莉厄丝酱就要成为触手的玩物，所有人都不由得闭紧了双眼—— [w]
-@se storage="getup_1"
-@ws canskip="true"
-;Transition
 @backlay
 @image layer="stage" page="back" storage="black" visible="true"
 @trans method="crossfade" time="700"
 @wt
+眼看着阿莉厄丝酱就要成为触手的玩物，所有人都不由得闭紧了双眼—— [w]
+@stopbgm
+@se storage="ringtone_morning"
+@ws canskip="true"
+@hidemes
+;Transition
 @backlay
 @image layer="stage" page="back" storage="k1_bedroom_flux" visible="true"
-@trans method="crossfade" time="700"
+@trans method="scroll" from="bottom" time="1000" stay="stayback"
 @wt
+@showmes
 我猛地从床上坐起身来。 [w]
 眼前并没有什么触手怪物，也看不到什么魔法少女。只有一如既往的天花板与熟悉的墙壁。 [w]
 @backlay
@@ -167,17 +179,21 @@
 @主角
 ——时间也不早了，赶紧收拾收拾出门吧。 [w]
 我不再思考这个不知所谓的梦境的实际意义，转而从床上爬下地面，开始匆忙做起出门的准备。 [w]
+@playse storage="getup_1"
 ;Transition
 @backlay
 @image layer="stage" page="back" storage="black" visible="true"
-@trans method="crossfade" time="700"
+@trans method="crossfade" time="1200"
 @wt
 @backlay
 @image layer="stage" page="back" storage="k1_road" visible="true"
-@trans method="crossfade" time="700"
+@trans method="crossfade" time="1200"
 @wt
+@stopse
+@fadeinbgm storage="thecrowd" time="2000"
 简单洗漱过后，我快步离开宿舍楼，走在校园里宽敞的大道上，向着那个约定好的地点前进。 [w]
 道路的两侧种满了绿意葱茏的树木，许多学生们在树荫下忙碌地穿梭着。 [w]
+@wb
 @主角
 （还真是热闹啊……） [w]
 我一边走在林荫道上，一边观察着周围来来往往的人们，不禁回忆起了我刚刚来到这里时的景象。 [w]
@@ -244,10 +260,16 @@
 @wt
 @wact layer="stage"
 回想着记忆里葵那副呆呆的，却又总是那么真挚的模样，我的嘴角不禁浮现一丝微笑。刚才的紧张也随之烟消云散。 [w]
+@hidemes
+@fadepausebgm time="1000"
 @backlay
 @image layer="stage" page="back" storage="k1_playground" visible="true"
-@trans method="crossfade" time="700"
+@trans method="scroll" stay="stayback" time="2500"
 @wt
+@wb
+@showmes
+@resumebgm
+@bgmopt volume="100"
 在将近一刻钟的步行后，我终于来到了芳甲大学的操场上。 [w]
 平时显得空旷的操场上如今被五颜六色的摊位点缀的满满当当，各个摊位旁边则是被看热闹的学生们围得水泄不通。 [w]
 身旁的摊位传来一阵欢呼，惹得不少路人驻足观看。 [w]
@@ -471,6 +493,7 @@
 @freeimage layer="0" page="back"
 @trans method="crossfade" time="700"
 @wt
+@stopbgm
 我和葵离开人声鼎沸的会场中心，来到相对冷清的一角。 [w]
 这里姑且也算是会场的一部分，但是被分配到这边的摊位似乎都是无人看管的“幽灵摊位”。 [w]
 也正因如此，几乎没什么人来到这边。四下的安静与方才的喧闹形成了鲜明的对比。 [w]
