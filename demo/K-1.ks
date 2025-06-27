@@ -12,7 +12,7 @@
 @backlay
 @image layer="stage" page="back" storage="k1_worldmap" visible="true"
 @trans method="crossfade" time="700"
-@wb
+@wb canskip="true"
 @wt
 神秘UFO降落在七大洲的各个角落，而从中出现的是不计其数的外星侵略者。 [w]
 @backlay
@@ -73,7 +73,7 @@
 触手外星人继续在建筑群中肆虐，城里的居民们无助地奔逃着。 [w]
 但是，人类的希望仍然没有消失。 [w]
 @fadepausebgm time="500"
-@wb
+@wb canskip="true"
 @npc id="声音"
 你，相信魔法吗？ [w]
 @npc id="男性"
@@ -193,7 +193,7 @@
 @fadeinbgm storage="thecrowd" time="2000"
 简单洗漱过后，我快步离开宿舍楼，走在校园里宽敞的大道上，向着那个约定好的地点前进。 [w]
 道路的两侧种满了绿意葱茏的树木，许多学生们在树荫下忙碌地穿梭着。 [w]
-@wb
+@wb canskip="true"
 @主角
 （还真是热闹啊……） [w]
 我一边走在林荫道上，一边观察着周围来来往往的人们，不禁回忆起了我刚刚来到这里时的景象。 [w]
@@ -222,7 +222,7 @@
 @action time="0" zoom="100" layer="stage" page="back" module="LayerNormalZoomModule"
 @wt
 @wact layer="stage"
-@se storage="ringtone_bike"
+@se storage="ringtone_bike_1"
 @ws canskip="true"
 @主角
 哦，抱歉。 [w]
@@ -266,14 +266,15 @@
 @image layer="stage" page="back" storage="k1_playground" visible="true"
 @trans method="scroll" stay="stayback" time="2500"
 @wt
-@wb
+@wb canskip="true"
 @showmes
 @resumebgm
-@bgmopt volume="100"
+@fadebgm volume="100" time="1000"
 在将近一刻钟的步行后，我终于来到了芳甲大学的操场上。 [w]
 平时显得空旷的操场上如今被五颜六色的摊位点缀的满满当当，各个摊位旁边则是被看热闹的学生们围得水泄不通。 [w]
 身旁的摊位传来一阵欢呼，惹得不少路人驻足观看。 [w]
 不过我现在无暇顾及这些，现在的当务之急是要找到她——平野葵。 [w]
+@wb canskip="true"
 @主角
 （会在哪里呢——哦，找到了） [w]
 我环顾四周，不会吹灰之力就发现了我的目标。不，不如说找不到她反而比较难吧。 [w]

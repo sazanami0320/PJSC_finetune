@@ -3,12 +3,28 @@
 @history output="true"
 ;[剧本注]场景：芳甲大学校园 - 操场通往入名楼的林荫路 (午后)
 ;[剧本注]环境：初秋，天空湛蓝，阳光强烈。红砖路，梧桐树荫，光斑点点。远处操场招新喧嚣隐约可闻。
+@hidemes
 @backlay
-@image layer="stage" page="back" storage="k2_playground_outside" visible="true"
+@image layer="stage" page="back" storage="black" visible="true"
 @freeimage layer="0" page="back"
 @freeimage layer="1" page="back"
+@trans method="crossfade" time="1000"
+@wt
+@backlay
+@image layer="stage" page="back" storage="interlude_nmb_garden" visible="true"
 @trans method="crossfade" time="700"
 @wt
+@playse storage="transition_1"
+@ws canskip="true"
+@backlay
+@image layer="stage" page="back" storage="black" visible="true"
+@trans method="crossfade" time="700"
+@wt
+@backlay
+@image layer="stage" page="back" storage="k2_playground_outside" visible="true"
+@trans method="crossfade" time="700"
+@wt
+@showmes
 走出操场，初秋的天空湛蓝得如同维米尔的头巾，太阳依旧毒辣，照在红砖路上晃得人睁不开眼睛。 [w]
 我眯着眼睛走在葵后面，不禁觉得自己大脑中的回路是不是被太阳晒得过热了。 [w]
 @主角
@@ -29,7 +45,7 @@
 若是当真有什么魔法，大概就是这漂浮着躁动的高昂能量和令人浮想联翩的瑰色空气本身吧。 [w]
 即使我向来与青春这二字无缘，但这名为青春的魔法还是过于诱惑。 [w]
 一时间，我不禁也被那炫丽得如李斯特的钢琴曲般的幻想摄住了魂魄。 [w]
-@wb
+@wb canskip="true"
 @stopaction layer="stage"
 @backlay
 @trans layer="base" time="500" method="crossfade"
@@ -205,11 +221,12 @@
 @endvo
 @stopbgm
 @backlay
-@image layer="stage" page="back" storage="k2_playground_outside" visible="true"
+@image layer="stage" page="back" storage="black" visible="true"
 @freeimage layer="0" page="back"
 @trans method="universal" rule="20" vague="0" time="1500"
 @wt
 @backlay
+@image layer="stage" page="back" storage="k2_playground_outside" visible="true"
 @image left="512" page="back" layer="0" top="200" storage="aoi3_thinking" visible="true"
 @trans method="universal" rule="21" vague="0" time="1500"
 @wt
@@ -232,7 +249,7 @@
 @葵
 哎？ [w]
 @endvo
-@wf
+@wf canskip="true"
 怀中的少女似乎此时才回过神来，发出短促的呼声，呼出的热气轻拂过我的脖颈，令我有些痒。 [w]
 我这时才意识到怀中的重量，少女的身体温热而柔软，如圣托里尼岛的小屋般白皙的手臂紧贴着我的手. [w]
 一股清香钻进我的鼻孔，令我不由得心神荡漾起来。 [w]
@@ -365,7 +382,7 @@
 @主角
  (小孩子吗，还说这种话。) [w]
 我感到有些无奈，但还是跟着葵走上了大台阶。 [w]
-@wb
+@wb canskip="true"
 @stopbgm
 ;[剧本注]场景转换：大台阶上的空中花园
 @backlay
@@ -430,7 +447,7 @@
 葵乖巧地点头，只有在这个时候这家伙才会这么乖。 [w]
 虽然平常也大都是我在照顾葵，但过了一年再次重逢后葵还真的成了我的学妹，这种变化让我一时间有些适应不过来。 [w]
 现在的她给人一种格外的想去呵护的冲动。仅仅是一年的差距就会有这样大的变化吗？我又胡思乱想起来。 [w]
-@wb
+@wb canskip="true"
 @fadepausebgm time="1000"
 ;[剧本注]场景：芳甲大学 - 入名楼内部走廊 (午后)
 ;[剧本注]环境：老旧空调冷风，灰色地砖，白色天花板，人来人往。
@@ -533,7 +550,7 @@
 @葵
 电梯，在哪？ [w]
 @endvo
-@wb
+@wb canskip="true"
 @fadeoutbgm time="1500"
 ;[剧本注]场景：芳甲大学 - 入名楼电梯内部 (午后)
 ;[剧本注]环境：银色电梯轿厢，安静。
@@ -542,7 +559,7 @@
 @freeimage layer="0" page="back"
 @trans method="crossfade" time="700"
 @wt
-@wb
+@wb canskip="true"
 @se storage="ding_openthefift"
 随着"叮"的声音响起，门边的红灯亮起。 [w]
 在心中默数三秒，眼前的银色大门打开。我与葵进入轿厢，按上最高层的按钮，片刻后，银色大门关闭，在短暂的超重感后，轿厢开始匀速上升。 [w]
@@ -774,7 +791,7 @@
 那就快走吧。 [w]
 @endvo
 葵推着我的后背往前走，有那么着急吗? [w]
-@wb
+@wb canskip="true"
 @fadeoutbgm time="1000"
 ;[剧本注]场景：芳甲大学 - 入名楼社团活动区走廊 (午后)
 ;[剧本注]环境：灯光昏暗，空气沉闷，冷清
@@ -783,7 +800,7 @@
 @freeimage layer="0" page="back"
 @trans method="crossfade" time="700"
 @wt
-@wb
+@wb canskip="true"
 @fadeinbgm storage="airconditioning" time="1000"
 ;[需求]重置效果
 爬了两段楼梯，经过三个拐角后，我们来到了社团活动区中一个冷清的走廊。 [w]
@@ -837,7 +854,7 @@
 @image left="512" page="back" layer="0" top="200" storage="aoi2_wakuwaku" visible="true"
 @trans time="500" method="crossfade"
 @wt
-@wb
+@wb canskip="true"
 @fadeinbgm storage="airconditioning" time="1000"
 @vo storage="K-2_9c007e70_cn"
 @葵
@@ -886,7 +903,7 @@
 @主角
 啊，葵，你真要进去吗？ [w]
 我话还没说完，但葵已经推开门走了进去，我没有办法，只能硬着头皮跟着她走了进去。 [w]
-@wb
+@wb canskip="true"
 @fadeoutbgm time="1000"
 ;[剧本注]场景：芳甲大学 - 魔法研究部活动室 (午后)
 ;[剧本注]环境：比四叠半略大的教室，昏暗（未开灯），朴素装修（白墙，白色长桌，灰色塑料椅，银色柜子）。唯一异常：飞鸟灯的装扮。
@@ -939,7 +956,12 @@
 等等！别走！开玩笑的开玩笑的！等一下！有话好说——！ [w]
 @endvo
 @fadeoutse time="1000"
-@wf
+@backlay
+@image  layer="stage" page="back" storage="k2_room_dark" visible="true"
+@image left="512" page="back" layer="0" top="145" storage="tomori3_panic" visible="true"
+@trans time="50" method="crossfade"
+@wt
+@wf canskip="true"
 神秘的女生手忙脚乱地掀开兜帽，露出一张标致靓丽的脸庞，即使深蓝色的长发略显凌乱，也不得不承认这是个不折不扣的美人。 [w]
 此刻她明亮的琥珀色的眼睛中满是急切，一副要哭出来的模样，刚才的冷酷杀手形象已经荡然无存。 [w]
 @vo storage="K-2_eefafba0_cn"
@@ -1219,7 +1241,7 @@
 飞鸟灯！你的荒唐的魔法研究部，就由我来终结！ [w]
 @resetfont
 @endvo
-@wb
+@wb canskip="true"
 @fadeoutbgm time="2000"
 ;[剧本注]场景：魔法研究部活动室
 ;[剧本注]环境：同上。柊澪登场（金色双马尾，气势汹汹）。
@@ -1236,7 +1258,7 @@
 @trans method="crossfade" time="1000"
 @wt
 @backlay
-@wb
+@wb canskip="true"
 ;==End Transition==
 @playse storage="pouringtea_close_long"
 虽然早就有所预感，但我还是被闯进来的双马尾女孩吓了一跳。 [w]
