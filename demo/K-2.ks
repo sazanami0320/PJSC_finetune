@@ -880,7 +880,7 @@
 比起出现在这个教室似乎，她似乎更应该出现在某个法国工作室出品的著名系列游戏中。 [w]
 @backlay
 @freeimage layer="0" page="back"
-@image layer="stage" page="back" storage="k2_room_dark_new" visible="true"
+@image layer="stage" page="back" storage="k2_tomori" visible="true"
 @trans method="crossfade" time="700"
 @wt
 面对此等人物，我又该如何应对呢，唯有二字。 [w]
