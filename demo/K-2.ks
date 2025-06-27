@@ -18,11 +18,24 @@
 我摇摇头，试图梳理一下混乱的思绪。 [w]
 @se storage="thecrowd"
 @ws canskip="true"
+@backlay
+@trans layer="base" time="500" method="crossfade"
+@action time="0" zoom="200" layer="stage" page="back" module="LayerNormalZoomModule"
+@wt
+@wact layer="stage"
+;[TODO] 检查这一镜头的坐标
+@action start="0" end="700" time="16000" layer="stage" module="LayerLoopMoveXModule"
 即使走出了操场，依旧能听到社团招新的喧嚣，路上的男男女女三五成群说说笑笑, 各种兴奋的话语伴随着青春的气息弥漫在开学季的初秋空气中。 [w]
 这空气太过清新梦幻，令人忍不住飘飘然地幻想着什么青春的美梦，期待着些不切实际的奇迹。 [w]
 若是当真有什么魔法，大概就是这漂浮着躁动的高昂能量和令人浮想联翩的瑰色空气本身吧。 [w]
 即使我向来与青春这二字无缘，但这名为青春的魔法还是过于诱惑。 [w]
 一时间，我不禁也被那炫丽得如李斯特的钢琴曲般的幻想摄住了魂魄。 [w]
+@stopaction layer="stage"
+@backlay
+@trans layer="base" time="500" method="crossfade"
+@action time="0" zoom="100" layer="stage" page="back" module="LayerNormalZoomModule"
+@wt
+@wact layer="stage"
 @backlay
 @image left="512" page="back" layer="0" top="200" storage="aoi3_thinking" visible="true"
 @trans time="500" method="crossfade"
@@ -35,7 +48,7 @@
 @trans method="crossfade" time="700"
 @wt
 @backlay
-@image layer="stage" page="back" storage="k1_playground" visible="true"
+@image layer="stage" page="back" storage="k1_playground_corner" visible="true"
 @trans method="crossfade" time="700"
 @wt
 @backlay
@@ -72,8 +85,8 @@
 @npc id="女生"
 还问我感不感兴趣，也不想想你们社团—— [w]
 @endvo
-@font size="80"
 @主角
+@font size="80"
 听我说！！ [w]
 @resetfont
 眼看着话题的方向越来越不对，我终于忍不住吼起来。 [w]
@@ -134,16 +147,16 @@
 @endvo
 @主角
 行了，你走吧。 [w]
+@vo storage="K-2_b24c8310_cn"
+@npc id="女生"
+好的好的，多谢学长学姐！ [w]
+@endvo
 @backlay
 @freeimage layer="1" page="back"
 @trans method="crossfade" time="500"
 @wt
 @move time=200 path="(100, 200, 255)" layer="0"
 @wm
-@vo storage="K-2_b24c8310_cn"
-@npc id="女生"
-好的好的，多谢学长学姐！ [w]
-@endvo
 终于打发走了这个意义不明的女生，我正准备拉着葵离开这里——却突然又被叫住。 [w]
 @move time="200" path="(100, 200, 255)" layer="0"
 @wm
@@ -204,7 +217,7 @@
 我也尝试过插科打诨来让葵重新露出笑容，但均以失败告终。 [w]
 @主角
 (之前想好的话题也都说完了，还有什么招数可以用吗……) [w]
-发愁着的我在丁字路口前站住了脚步。但葵却仍然神游物外，如同在那个八月十五日的中午一般无视了红灯继续前行。危险！ [w]
+发愁着的我在丁字路口前站住了脚步。但葵却仍然神游物外，如同在那个八月十五日的中午一般无视了红灯继续前行。 [w]
 @se storage="motorcycle_1"
 @ws canskip="true"
 @主角
@@ -540,12 +553,25 @@
 @wt
 @主角
 ( 从上面来看竟是这样小的吗。) [w]
+@backlay
+@trans layer="base" time="500" method="crossfade"
+@action time="0" zoom="200" layer="stage" page="back" module="LayerNormalZoomModule"
+@wt
+@wact layer="stage"
+;[TODO] 检查这一镜头的坐标
+@action start="0" end="700" time="16000" layer="stage" module="LayerLoopMoveXModule"
 我的感想恐怕小学生听了都会发笑吧。 [w]
 但事实就是如此，因为我现在才发现自己也是第一次来到这里。 [w]
 毕竟哪会有学生闲的没事去顶楼看风景呢，入名楼的顶楼似乎只是用来仰望的，不会给人带来任何形式的探索欲望。 [w]
 更何况这里的景色即使经过美化也未免乏善可陈，不会给人那种俯瞰独有的喜悦与开阔感。 [w]
 我看向身旁静默的少女，从刚才开始她就又恢复了先前神不在焉的样子。 [w]
 明明刚刚她还如此兴奋，但这里仿佛有着什么东西将她的语言吸走了。 [w]
+@stopaction layer="stage"
+@backlay
+@trans layer="base" time="500" method="crossfade"
+@action time="0" zoom="100" layer="stage" page="back" module="LayerNormalZoomModule"
+@wt
+@wact layer="stage"
 @主角
 葵，这就是你今后要生活的地方了，怎么样，感觉如何？ [w]
 少女终于有了反应。 [w]
