@@ -330,8 +330,10 @@
 @image left="512" page="back" layer="0" top="200" storage="aoi1_wakuwaku" visible="true"
 @trans time="500" method="crossfade"
 @wt
+@vo storage="K-1_e95ce260_cn"
 @葵
 阿拓，快看那个！ [w]
+@endvo
 @主角
 哦哦，是街舞社的路演。她们这阵仗可不小啊。 [w]
 @backlay
@@ -683,10 +685,8 @@
 @image left="512" page="back" layer="0" top="200" storage="aoi3_calm" visible="true"
 @trans time="500" method="crossfade"
 @wt
-@vo storage="K-1_ceb5d420_cn"
 @葵
-（翻页）哦，背面还标注了社团活动室的位置—— [w]
-@endvo
+（翻面）哦，背面还标注了社团活动室的位置—— [w]
 @npc id="传单"
 来到入名楼（最高的那个）I座10层，出电梯左拐左拐再左拐⊂('ω`⊂ [w]
 @npc id="传单"
