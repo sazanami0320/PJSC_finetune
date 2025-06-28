@@ -1550,6 +1550,12 @@
 好糟糕的台词，这不是大叔搭讪美少女的惯用台词吗，话说回来管飞鸟学姐叫大叔似乎也没错 [w]
 女生被飞鸟学姐可疑的话吓得有些退缩。 [w]
 也难怪，陌生美少女大姐姐向你搭讪，多半不是推销就是让你搬东西。 [w]
+@move time="200" path="(100, 145, 255)" layer="0"
+@wm
+@backlay
+@image left="924" page="back" layer="1" top="210" storage="yukari3_worried" visible="true"
+@trans time="500" method="crossfade"
+@wt
 @vo storage="K-2_1356e500_cn"
 @npc id="白发女生"
 诶诶？请、请问您是？ [w]
@@ -1558,6 +1564,10 @@
 @npc id="白发女生"
 ……我、我只是随便走走…… [w]
 @endvo
+@backlay
+@image left="100" page="back" layer="0" top="145" storage="tomori3_calm" visible="true"
+@trans time="500" method="crossfade"
+@wt
 @vo storage="K-2_ca4842b0_cn"
 @灯
 我是飞鸟灯，大四的，叫我灯学姐就可以了哦~来来来，别在走廊站着，这边请~请坐请坐~ [w]
@@ -1573,11 +1583,12 @@
 @backlay
 @image layer="stage" page="back" storage="k2_room_light" visible="true"
 @freeimage layer="0" page="back"
+@freeimage layer="1" page="back"
 @trans method="crossfade" time="700"
 @wt
 飞鸟学姐将女生按在椅子上，转身张开双臂，高昂起头宛如赞美太阳一般宣布了。 [w]
 @backlay
-@image left="512" page="back" layer="0" top="145" storage="tomori1_wakuwaku" visible="true"
+@image left="512" page="back" layer="0" top="145" storage="tomori3_wakuwaku" visible="true"
 @trans time="500" method="crossfade"
 @wt
 @vo storage="K-2_6d0903c0_cn"
@@ -1600,14 +1611,14 @@
 @灯
 对了忘记问了，学妹叫什么名字呀？哪个学院的呀？大几了呀？ [w]
 @endvo
-@backlay
-@image left="100" page="back" layer="0" top="145" storage="tomori3_wakuwaku" visible="true"
-@trans time="500" method="crossfade"
-@wt
 @vo storage="K-2_20fa0bd0_cn"
 @灯
 喜欢看鲨鱼电影吗？有没有兴趣加入我们有趣的社团呀，虽说已经加入了就是了。 [w]
 @endvo
+@backlay
+@image left="924" page="back" layer="1" top="210" storage="yukari3_worried" visible="true"
+@trans time="500" method="crossfade"
+@wt
 @vo storage="K-2_9ba009c0_cn"
 @缘
 我、我叫茜音缘……大、大二……经管学院…… [w]
@@ -1616,6 +1627,10 @@
 @缘
 社团？我、我还没加...... [w]
 @endvo
+@backlay
+@image left="100" page="back" layer="0" top="145" storage="tomori1_wakuwaku" visible="true"
+@trans time="500" method="crossfade"
+@wt
 @vo storage="K-2_6f9782f0_cn"
 @灯
 没关系，正好你现在就有社团了，而且还是研究现代魔法的魔法研究部诶。 [w]
@@ -1633,7 +1648,7 @@
 @主角
 能告诉我们，你是怎么走到这条走廊来的吗？这里平时很少有人来的。 [w]
 @backlay
-@image left="924" page="back" layer="1" top="210" storage="yukari1_smile" visible="true"
+@image left="924" page="back" layer="1" top="210" storage="yukari3_smile" visible="true"
 @trans time="500" method="crossfade"
 @wt
 @vo storage="K-2_0adbd6e0_cn"
@@ -1649,7 +1664,7 @@
 结果刚走没几步，学姐她就…… [w]
 @endvo
 @backlay
-@image left="100" page="back" layer="0" top="145" storage="tomori1_wakuwaku" visible="true"
+@image left="100" page="back" layer="0" top="145" storage="tomori3_wakuwaku" visible="true"
 @trans time="500" method="crossfade"
 @wt
 @vo storage="K-2_69eebb80_cn"
@@ -1661,7 +1676,7 @@
 怎么样，魔法的数字五就这样赋予你了，高兴吧学妹！ [w]
 @endvo
 @backlay
-@image left="924" page="back" layer="1" top="210" storage="yukari3_surprised" visible="true"
+@image left="924" page="back" layer="1" top="210" storage="yukari1_surprised" visible="true"
 @trans time="500" method="crossfade"
 @wt
 @vo storage="K-2_4d150be0_cn"
@@ -1670,7 +1685,7 @@
 @endvo
 但是她看到飞鸟学姐盛满期待与乞求的琥珀色眼睛，还是屈服了。 [w]
 @backlay
-@image left="924" page="back" layer="1" top="210" storage="yukari1_calm" visible="true"
+@image left="924" page="back" layer="1" top="210" storage="yukari2_calm" visible="true"
 @trans time="500" method="crossfade"
 @wt
 @vo storage="K-2_22837290_cn"
@@ -1678,10 +1693,6 @@
 ……好、好吧……请多指教…… [w]
 @endvo
 唉，这是个善良的好孩子啊，我都有些于心不忍了。 [w]
-@backlay
-@image left="100" page="back" layer="0" top="145" storage="tomori3_wakuwaku" visible="true"
-@trans time="500" method="crossfade"
-@wt
 @vo storage="K-2_82a19fa0_cn"
 @灯
 好耶！我就说'五'这个数字很完美吧！现在齐了！ [w]
@@ -1692,7 +1703,7 @@
 等等……你不会把我也算上了吧？！ [w]
 我即使似乎预见到了未来的发展，但还是顽强地提出了异议。 [w]
 @backlay
-@image left="100" page="back" layer="0" top="145" storage="tomori2_calm" visible="true"
+@image left="100" page="back" layer="0" top="145" storage="tomori1_calm" visible="true"
 @trans time="500" method="crossfade"
 @wt
 @vo storage="K-2_1acb02b0_cn"
@@ -1733,7 +1744,7 @@
 你看，你可爱的小女朋友可是非常喜欢我们社团，而且已经是我重要的第一号部员了哦~ [w]
 @endvo
 @backlay
-@image left="100" page="back" layer="0" top="145" storage="tomori3_grin" visible="true"
+@image left="100" page="back" layer="0" top="145" storage="tomori1_grin" visible="true"
 @trans time="500" method="crossfade"
 @wt
 @vo storage="K-2_d5083250_cn"
@@ -1759,7 +1770,7 @@
 @wm
 @wm
 @backlay
-@image left="924" page="back" layer="2" top="260" storage="mio3_pout" visible="true"
+@image left="924" page="back" layer="2" top="260" storage="mio1_pout" visible="true"
 @trans time="500" method="crossfade"
 @wt
 @vo storage="K-2_e8eeb3d0_cn"
@@ -1806,12 +1817,12 @@
 飞鸟学姐！求求你了！收了神通吧！放过我！也放过葵！ [w]
 最终，还是逃不掉吗？我开始怀疑这个房间是否真的有魔法。 [w]
 @backlay
-@image left="50" page="back" layer="0" top="145" storage="tomori2_grin" visible="true"
+@image left="50" page="back" layer="0" top="145" storage="tomori3_grin" visible="true"
 @trans time="500" method="crossfade"
 @wt
 飞鸟学姐露出诡计得逞的微笑，高举双手大声宣布社团的成立。 [w]
 @backlay
-@image left="50" page="back" layer="0" top="145" storage="tomori2_wakuwaku" visible="true"
+@image left="50" page="back" layer="0" top="145" storage="tomori1_wakuwaku" visible="true"
 @trans time="500" method="crossfade"
 @wt
 @vo storage="K-2_3242cd50_cn"
@@ -1830,10 +1841,6 @@
 好！ [w]
 @主角
 好…… [w]
-@backlay
-@image left="50" page="back" layer="0" top="145" storage="tomori1_wakuwaku" visible="true"
-@trans time="500" method="crossfade"
-@wt
 @vo storage="K-2_3786c4e0_cn"
 @灯
 那么散会！ [w]
