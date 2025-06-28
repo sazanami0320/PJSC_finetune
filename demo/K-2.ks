@@ -15,6 +15,9 @@
 @trans method="crossfade" time="700"
 @wt
 @playse storage="transition_1"
+@wait time="3000"
+@vo storage="Title_aoi_cn"
+@endvo
 @ws canskip="true"
 @backlay
 @image layer="stage" page="back" storage="black" visible="true"
@@ -252,6 +255,7 @@
 @wf canskip="true"
 怀中的少女似乎此时才回过神来，发出短促的呼声，呼出的热气轻拂过我的脖颈，令我有些痒。 [w]
 我这时才意识到怀中的重量，少女的身体温热而柔软，如圣托里尼岛的小屋般白皙的手臂紧贴着我的手. [w]
+@fadeinbgm storage="aoi" time="1000"
 一股清香钻进我的鼻孔，令我不由得心神荡漾起来。 [w]
 @主角
 没有，我是想... [w]
@@ -271,7 +275,6 @@
 @freeimage layer="0" page="back"
 @trans method="crossfade" time="700"
 @wt
-@fadeinbgm storage="step_two_slow_grass" time="1000"
 我们走在前往入名楼的林荫路上，阳光透过梧桐树密密麻麻的叶片，将些许光斑洒在葵的白色连衣裙和粉色的长发上。 [w]
 那光斑仿佛沾染了树叶的绿色，让安静的葵看起来格外活泼可爱。 [w]
 只是葵似乎想着什么，心不在焉地走着路。而我看到她靓丽的背影，又回想起刚才臂弯的触感，心中也不由得些许荡漾起来。 [w]
@@ -382,8 +385,6 @@
 @主角
  (小孩子吗，还说这种话。) [w]
 我感到有些无奈，但还是跟着葵走上了大台阶。 [w]
-@wb canskip="true"
-@stopbgm
 ;[剧本注]场景转换：大台阶上的空中花园
 @backlay
 @image layer="stage" page="back" storage="k2_nmb_garden" visible="true"
@@ -421,7 +422,6 @@
 @image left="512" page="back" layer="0" top="200" storage="aoi1_curious" visible="true"
 @trans time="500" method="crossfade"
 @wt
-@fadeinbgm storage="step_two_slow_stone"
 @vo storage="K-2_45bb7e30_cn"
 @葵
 阿拓，你刚才说你也会迷路是真的吗？ [w]
@@ -456,9 +456,9 @@
 @freeimage layer="0" page="back"
 @trans method="crossfade" time="700"
 @wt
-我带着葵走进入名楼。 [w]
 @se storage="firedoor_open_close"
 @fadeinbgm storage="airconditioning" time="1000"
+我带着葵走进入名楼。 [w]
 一开门，一股有着老旧空调内机味道的冷风迎面扑来。随着玻璃门关上，喧嚣也与热浪一同被拒之门外， [w]
 我适才飘飘然的思绪也随着名为青春的魔法消逝了。 [w]
 这样的魔法，在这座钢筋混凝土构筑的堡垒面前显得如此脆弱。 [w]
@@ -586,6 +586,7 @@
 @wt
 @主角
 ( 从上面来看竟是这样小的吗。) [w]
+@fadeinbgm time="1000" storage="room"
 @backlay
 @trans layer="base" time="500" method="crossfade"
 @action time="0" zoom="200" layer="stage" page="back" module="LayerNormalZoomModule"
@@ -599,6 +600,7 @@
 更何况这里的景色即使经过美化也未免乏善可陈，不会给人那种俯瞰独有的喜悦与开阔感。 [w]
 我看向身旁静默的少女，从刚才开始她就又恢复了先前神不在焉的样子。 [w]
 明明刚刚她还如此兴奋，但这里仿佛有着什么东西将她的语言吸走了。 [w]
+@wb canskip="true"
 @stopaction layer="stage"
 @backlay
 @trans layer="base" time="500" method="crossfade"
@@ -713,6 +715,7 @@
 远处的操场嘈杂的声音汇成柔弱的声波，笼罩在这座用巨额金钱堆积而成的庞大而孤寂的城市上空。 [w]
 我突然想起那张神秘的海报，我知道，是时候去看看那个魔法研究部了。 [w]
 但是，我还是祈祷眼下的这个时刻能够更久，更久一些。 [w]
+@fadeoutbgm time="1500"
 ;==Transition==
 @backlay
 @freeimage layer="0" page="back"
@@ -725,6 +728,7 @@
 @wt
 @backlay
 ;==End Transition==
+@wb canskip="true"
 @主角
  葵，走吧，去魔法研究部看看吧。 [w]
 @vo storage="K-2_92359890_cn"
@@ -743,10 +747,12 @@
 @wt
 @trans method="crossfade" time="700"
 @wt
+@fadeinbgm time="1000" storage="airconditioning"
 下降的电梯里还是那么安静,只是，气氛已经有了些许不同。 [w]
 @主角
 等一下，葵，我看看应该是往这边走吧... [w]
 正说着话，我突然感觉到自己的衣角被谁抓住了，回头一看，是葵。不知为什么，她有些害羞地撇开脸，细声说着什么。 [w]
+@wb canskip="true"
 @backlay
 @image left="512" page="back" layer="0" top="200" storage="aoi3_afraid" visible="true"
 @trans time="500" method="crossfade"
@@ -762,6 +768,7 @@
 厕所...在哪... [w]
 @endvo
 她的脸更红了，我却只是感到傻眼。 [w]
+@fadepausebgm time="1000"
 ;[剧本注]场景：芳甲大学 - 入名楼女厕外走廊 (午后)
 ;[剧本注]环境：厕所门口。
 @backlay
@@ -769,6 +776,7 @@
 @freeimage layer="0" page="back"
 @trans method="crossfade" time="700"
 @wt
+@wb canskip="true"
 @fadeinbgm storage="airconditioning" time="1000"
 把葵送进厕所后，我在厕所门口等她。 [w]
 真是的，要上厕所就早点说啊，我无奈地扶额。 [w]
@@ -805,10 +813,11 @@
 @trans method="crossfade" time="700"
 @wt
 @wb canskip="true"
-@fadeinbgm storage="airconditioning" time="1000"
+@fadeinbgm time="1000" storage="yuan"
 ;[需求]重置效果
 爬了两段楼梯，经过三个拐角后，我们来到了社团活动区中一个冷清的走廊。 [w]
 走廊天花板的灯光昏暗，墙壁的轮廓都隐藏在模糊不清的阴影中，空气潮湿而滞重，带着一股霉味，若是真有着什么魔法研究部，这倒是个不错的地方。 [w]
+@wb canskip="true"
 @playse storage="step_two_slow_stone" loop="true"
 @主角
 然后就是....九又四分之三个教室吗？ [w]
@@ -847,8 +856,7 @@
 那事不宜迟，快点数着地砖前进吧。 [w]
 @endvo
 这样的事显然很对葵的胃口，她兴致勃勃地一边低头数着地砖一边念念有词地往前走，而我则是看着她，生怕她撞到墙。 [w]
-@stopse
-@fadeoutbgm time="1000"
+@fadeoutse time="1000"
 @backlay
 @image layer="stage" page="back" storage="k2_corridor_hidden" visible="true"
 @freeimage layer="0" page="back"
@@ -858,8 +866,7 @@
 @image left="512" page="back" layer="0" top="200" storage="aoi2_wakuwaku" visible="true"
 @trans time="500" method="crossfade"
 @wt
-@wb canskip="true"
-@fadeinbgm storage="airconditioning" time="1000"
+@wf canskip="true"
 @vo storage="K-2_9c007e70_cn"
 @葵
 好了，这样就是九间教室了。 [w]
@@ -898,11 +905,13 @@
 对的，就是这样。 [w]
 在我们的面前，就是九又四分之三教室的真相了，说实话，知道了谜底之后反而有些想笑。 [w]
 因为这个手法实在有够简单的，而且与那个传单的恶趣味一脉相承。 [w]
+@fadeoutbgm time="1000"
 简单来说，我们面前的是一个伪装成跟旁边的墙壁一样颜色，一个平面的教室门。 [w]
 @vo storage="K-2_ef307ae0_cn"
 @npc id="女声"
 欢迎来到魔法研究部，外面的二位，请进吧。 [w]
 @endvo
+@wb canskip="true"
 这时，一个意外清亮的女声从门内传了出来。 [w]
 @主角
 啊，葵，你真要进去吗？ [w]
@@ -911,12 +920,12 @@
 @fadeoutbgm time="1000"
 ;[剧本注]场景：芳甲大学 - 魔法研究部活动室 (午后)
 ;[剧本注]环境：比四叠半略大的教室，昏暗（未开灯），朴素装修（白墙，白色长桌，灰色塑料椅，银色柜子）。唯一异常：飞鸟灯的装扮。
+@playse storage="woodendoor_open_close"
 @backlay
 @freeimage layer="0" page="back"
 @image layer="stage" page="back" storage="k2_tomori_hood" visible="true"
 @trans method="crossfade" time="700"
 @wt
-@playse storage="woodendoor_open_close"
 @ws canskip="true"
 @backlay
 @trans layer="base" time="500" method="crossfade"
@@ -932,53 +941,43 @@
 比起出现在这个教室似乎，她似乎更应该出现在某个法国工作室出品的著名系列游戏中。 [w]
 @stopaction layer="stage"
 @backlay
-@image left="512" page="back" layer="0" top="200" storage="aoi3_thinking" visible="true"
 @trans layer="base" time="500" method="crossfade"
 @action time="0" zoom="100" layer="stage" page="back" module="LayerNormalZoomModule"
 @wt
 @wact layer="stage"
 面对此等人物，我又该如何应对呢，唯有二字。 [w]
-@image left="512" page="back" layer="0" top="200" storage="aoi3_thinking" visible="true"
-@trans time="50" method="crossfade"
-@wt
-@se storage="step_one_slow_fartonear"
-@ws canskip="true"
-@backlay
-@image layer="stage" page="back" storage="k2_corridor_door" visible="true"
-@freeimage layer="0" page="back"
-@trans method="crossfade" time="700"
-@wt
 @主角
 葵，快跑！ [w]
 @playse storage="run_1"
-@backlay
-@image left="512" page="back" layer="0" top="145" storage="tomori2_panic" visible="true"
-@trans time="500" method="crossfade"
-@wt
 @vo storage="K-2_72648d60_cn"
 @npc id="神秘女生"
-等等！别走！开玩笑的开玩笑的！等一下！有话好说——！ [w]
+等等，别走，开玩笑的开玩笑的！等一下！有话好说——！ [w]
 @endvo
 @fadeoutse time="1000"
+@fadeinbgm time="1000" storage="joking"
 @backlay
 @image  layer="stage" page="back" storage="k2_room_dark" visible="true"
 @image left="512" page="back" layer="0" top="145" storage="tomori3_panic" visible="true"
 @trans time="50" method="crossfade"
 @wt
 @wf canskip="true"
+@wb canskip="true"
 神秘的女生手忙脚乱地掀开兜帽，露出一张标致靓丽的脸庞，即使深蓝色的长发略显凌乱，也不得不承认这是个不折不扣的美人。 [w]
 此刻她明亮的琥珀色的眼睛中满是急切，一副要哭出来的模样，刚才的冷酷杀手形象已经荡然无存。 [w]
 @vo storage="K-2_eefafba0_cn"
 @npc id="神秘女生"
 对不起对不起，吓到你们了！ [w]
 @endvo
+@vo storage="K-2_f49a9270_cn"
 @npc id="神秘女生"
 我是部长飞鸟灯！大四的！真的不是奇怪的人！ [w]
+@endvo
 @vo storage="K-2_e01f96c0_cn"
 @灯
 (恳求) 拜托你们先别走，听我说两句嘛！ [w]
 @endvo
 她快步上前，张开双臂试图拦住去路，脸上堆满了恳求的笑容，与刚才判若两人。 [w]
+@fadeoutbgm time="1000"
 ;[剧本注]场景：魔法研究部活动室 (稍后)
 ;[剧本注]环境：同上，灯已脱下黑袍，优雅品茶。红茶清香弥漫。
 ;Transition
@@ -995,12 +994,15 @@
 @image layer="stage" page="back" storage="k2_room_light" visible="true"
 @trans method="crossfade" time="700"
 @wt
+@wb canskip="true"
 @se storage="pouringtea_light_short"
+@fadeinbgm time="1000" storage="yuan"
 冒着热气的红茶从考究的白瓷茶壶中流出，瞬间一股清香在部室中弥漫开来。 [w]
 飞鸟部长（存疑）坐在椅子上悠闲地品茶。她脱下了那个装神弄鬼的袍子，深蓝色的长发如丝绸般色泽美丽。 [w]
 她的坐姿和品茶的姿势也异常典雅优美，简直就是大小姐的范本。 [w]
 若是不知道她的本性的话。 [w]
 @stopse
+@wb canskip="true"
 @backlay
 @image left="512" page="back" layer="0" top="145" storage="tomori3_wakuwaku" visible="true"
 @trans time="500" method="crossfade"
@@ -1098,6 +1100,7 @@
 @image left="924" page="back" layer="1" top="200" storage="aoi3_smile" visible="true"
 @trans time="500" method="crossfade"
 @wt
+@fadeoutbgm time="1000"
 @vo storage="K-2_df295070_cn"
 @葵
 好，那灯学姐，魔法研究部... [w]
@@ -1106,6 +1109,8 @@
 @image left="100" page="back" layer="0" top="145" storage="tomori1_smile" visible="true"
 @trans time="500" method="crossfade"
 @wt
+@wb canskip="true"
+@fadeinbgm time="1000" storage="joking"
 @vo storage="K-2_79b90ec0_cn"
 @灯
 对了小葵，你喜欢看电影吗？ [w]
@@ -1151,12 +1156,14 @@
 我则是在一旁看着两位少女大谈影史经典烂片，对她们的品味深感无语。 [w]
 竟然有人会跟葵一样喜欢看那种成本低廉，剧情狗屎又充满恶趣味鲨鱼B级片吗？ [w]
 我清了清嗓子，打断了她们热火朝天的讨论。 [w]
+@fadeoutbgm time="1000"
 @主角
 所以，这个社团到底是怎么回事？ [w]
 @主角
 飞鸟学姐是怎么当上这里的部长的？ [w]
 @主角
 这个社团，究竟是研究什么的？请你正面回答我们吧。 [w]
+@wb canskip="true"
 @backlay
 @image left="924" page="back" layer="1" top="200" storage="aoi1_wakuwaku" visible="true"
 @trans time="500" method="crossfade"
@@ -1179,10 +1186,12 @@
 @灯
 换句话说，你是否相信魔法？ [w]
 @endvo
+@fadeinbgm time="2000" storage="room"
 她仿佛变了一个人，眼中的戏谑和玩笑全都像都市夜晚的星星般无影无踪。 [w]
 取而代之的是一种仰视着纯粹之物的赞叹与祈祷，一种看着浴缸里的水缓慢流走的无奈，以及一种对自己的近乎残忍的讽刺。 [w]
 我被她的气势所慑服，一时间竟说不出话来。 [w]
 在一旁的葵则是沉默不语，似乎在思考着什么。 [w]
+@wb canskip="true"
 @backlay
 @image left="924" page="back" layer="1" top="200" storage="aoi3_thinking" visible="true"
 @trans time="500" method="crossfade"
@@ -1221,8 +1230,10 @@
 那么，我也相信魔法。 [w]
 @endvo
 天使般的笑容，如同新月下的海潮。 [w]
+@fadeoutbgm time="1000"
 @主角
 你们说了这么多，但这个社团到底... [w]
+@wb canskip="true"
 @se storage="door_heavey"
 我试图将话题从飘飘然的探讨拉回到现实，但是却被一位不速之客打断了。 [w]
 那位不速之客没有敲门就一下推开了精心伪装的九又四分之三门，大步走了进来。 [w]
@@ -1250,6 +1261,7 @@
 ;[剧本注]场景：魔法研究部活动室
 ;[剧本注]环境：同上。柊澪登场（金色双马尾，气势汹汹）。
 ;==Transition==
+@hidemes
 @backlay
 @freeimage layer="0" page="back"
 @freeimage layer="1" page="back"
@@ -1259,16 +1271,19 @@
 @wt
 @backlay
 @image layer="stage" page="back" storage="k2_room_light" time="1000" visible="true"
-@trans method="crossfade" time="1000"
+@trans method="scroll" from="bottom" time="1000" stay="stayback"
 @wt
 @backlay
 @wb canskip="true"
+@showmes
 ;==End Transition==
 @playse storage="pouringtea_close_long"
+@fadeinbgm storage="joking" time="1000"
 虽然早就有所预感，但我还是被闯进来的双马尾女孩吓了一跳。 [w]
 此时此刻的她正坐在活动室的桌前，以惊人的气势瞪着学姐——但学姐似乎完全不为所动，继续着手上泡茶的动作。 [w]
 察觉到我视线的双马尾转过头来，用恶狠狠的眼神瞪了我一眼，似乎在说“原来你们一直都在合伙骗我”。 [w]
 我只好无奈地笑一笑，并在心中默默的对双马尾道歉。 [w]
+@wb canskip="true"
 @backlay
 @image left="100" page="back" layer="0" top="145" storage="tomori3_grin" visible="true"
 @trans time="500" method="crossfade"
@@ -1461,8 +1476,10 @@
 @澪
 也是，一时半会跟你说不清楚。 [w]
 @endvo
+@vo storage="K-2_6d7228b0_cn"
 @澪
 不对，我什么时候允许你叫我小澪了？ [w]
+@endvo
 飞鸟学姐对抗议置若罔闻，只见她身体前倾，琥珀色的清澈眼睛里闪着好奇和不怀好意的光，就像是一个猫找到了自己的玩具。 [w]
 我知道，她接下来肯定要下套了。 [w]
 @backlay
@@ -1578,6 +1595,7 @@
 @灯
 加上之前的小葵，还有拓也君，我们就有……嗯，四个人了。 [w]
 @endvo
+@fadeoutbgm time="2000"
 @vo storage="K-2_203a57d0_cn"
 @灯
 四个人虽然是个不错的开始，但还是感觉要是再多一个人就好了呢。 [w]
@@ -1588,12 +1606,13 @@
 @endvo
 哎？什么时候我也加入了，问过我的意见了吗？ [w]
 我想抗议，但飞鸟学姐自顾自地陷入了深思之中。 [w]
+@wb canskip="true"
 @se storage="step_one_slow"
-@ws canskip="true"
 这时，门外的走廊里传来了一阵由远及近的脚步声，这声音显得额外突兀。 [w]
 飞鸟学姐的耳朵瞬间竖了起来，眼睛猛地一亮！ [w]
 罢了，狩猎模式启动了，我对外面的那位陌生学生感到惋惜。 [w]
 一瞬间，九又四分之三大门洞开，一个蓝色的身影划过部室，只留下一阵轻风。 [w]
+@stopse
 ;[剧本注]场景：入名楼 - 魔法研究部外昏暗走廊 (午后)
 ;[剧本注]环境：昏暗走廊。
 @backlay
@@ -1604,7 +1623,8 @@
 @trans method="crossfade" time="700"
 @wt
 ;[需求]重置效果
-昏暗的入名楼走廊。 [w]
+@fadeinbgm time="1000" storage="yuan"
+人迹罕至的入名楼走廊。 [w]
 一个看起来非常娇小、留着及肩白色短发、穿着普通休闲服、脸上带着明显迷茫表情的女生，正站在离门几步远的地方，似乎被突然冲出来的飞鸟学姐吓了一跳。 [w]
 飞鸟学姐瞬间切换为温柔可靠的学姐模式，声音甜得要滴下蜜来。 [w]
 @backlay
@@ -1646,6 +1666,7 @@
 (胆怯) 哦，好、好的……灯学姐……请问这里是？ [w]
 @endvo
 女生似乎还有些弄不清情况，茫然地看着飞鸟学姐，殊不知自己已经被拉上了贼船。 [w]
+@fadeoutbgm time="1000"
 ;[剧本注]场景：魔法研究部活动室
 ;[剧本注]环境：同上。新人物茜音缘加入。
 @backlay
@@ -1653,6 +1674,7 @@
 @freeimage layer="0" page="back"
 @freeimage layer="1" page="back"
 @trans method="crossfade" time="700"
+@wb canskip="true"
 @wt
 飞鸟学姐将女生按在椅子上，转身张开双臂，高昂起头宛如赞美太阳一般宣布了。 [w]
 @backlay
@@ -1663,12 +1685,14 @@
 @灯
 铛铛铛铛——！热烈欢迎，我们魔法研究部的第五位新部员！可爱的小学妹！大家鼓掌！ [w]
 @endvo
+@fadeinbgm time="1000" storage="joking"
 @move time="200" path="(100, 145, 255)" layer="0"
 @wm
 @backlay
 @image left="924" page="back" layer="1" top="210" storage="yukari2_puzzled" visible="true"
 @trans time="500" method="crossfade"
 @wt
+@wb canskip="true"
 @vo storage="K-2_bce305a0_cn"
 @npc id="白发女生"
 诶？魔法，部员？ [w]
@@ -1761,6 +1785,8 @@
 ……好、好吧……请多指教…… [w]
 @endvo
 唉，这是个善良的好孩子啊，我都有些于心不忍了。 [w]
+@fadeoutbgm time="1000"
+@wb canskip="true"
 @vo storage="K-2_82a19fa0_cn"
 @灯
 好耶！我就说'五'这个数字很完美吧！现在齐了！ [w]
@@ -1778,8 +1804,12 @@
 @灯
 学弟你在说什么傻话呢？ [w]
 @endvo
+@fadeinbgm time="1000" storage="joking"
+@vo storage="K-2_9ada27a0_cn"
 @灯
 小葵是第一，你是第二，小澪是第三，小缘是第四，我是部长，这不正好五人吗？ [w]
+@endvo
+@wb canskip="true"
 @vo storage="K-2_df4d6350_cn"
 @灯
 你不是我们部初创时期的第二人吗？ [w]
@@ -1826,11 +1856,13 @@
 @wt
 @vo storage="K-2_9f949b60_cn"
 @缘
+@font size="60"
 诶诶诶？！女、女朋友？！ [w]
 @endvo
 @vo storage="K-2_bb419700_cn"
 @缘
 这两位原来是那种关系吗？！好厉害！什么时候开始的？！ [w]
+@resetfont
 @endvo
 茜音的双眼发光，八卦之魂开始熊熊燃烧。 [w]
 @move time="200" path="(100, 145, 255)" layer="0"
@@ -1922,10 +1954,12 @@
 @灯
 那么散会！ [w]
 @endvo
+@fadeoutbgm time="1000"
 就这样，在大学的二年级，我被拉入了这样一个奇怪的社团，而我的大学生活也不可避免的有了翻天覆地的变化。 [w]
 这是我所期望的变化吗？我现在还有些说不准，但看到身边葵开心的笑容，我还是觉得这样也未尝不可。 [w]
 我现在过的生活本身，大概也算得上一种魔法吧。 [w]
 我怀揣着对魔法的疑虑，对未来的迷惘和身边少女的笑容，开启了我大学生活的新篇章。 [w]
+@wb canskip="true"
 @backlay
 @freeimage layer="0" page="back"
 @freeimage layer="1" page="back"

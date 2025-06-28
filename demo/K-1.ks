@@ -20,7 +20,6 @@
 @trans method="crossfade" time="700"
 @wt
 它们如同潮水一般涌入城市与街道，挥舞着长长的触手摧毁建筑，卷走居民—— [w]
-@ws canskip="true"
 @npc id="女性"
 啊————————! [w]
 @npc id="男性"
@@ -49,13 +48,13 @@
 听我口令，3，2，1，发射！ [w]
 @backlay
 @image layer="stage" page="back" storage="k1_explosion" visible="true"
-@trans method="crossfade" time="700"
+@trans method="crossfade" time="300"
 @wt
 @se storage="Heavyexplosion"
 @ws canskip="true"
 @backlay
 @image layer="stage" page="back" storage="k1_destroyed_city" visible="true"
-@trans method="crossfade" time="700"
+@trans method="crossfade" time="300"
 @wt
 @npc id="队长"
 可恶，就连穿甲弹也打不穿那家伙吗……真是个怪物…… [w]
@@ -190,7 +189,7 @@
 @trans method="crossfade" time="1200"
 @wt
 @stopse
-@fadeinbgm storage="thecrowd" time="2000"
+@fadeinbgm storage="normal" time="2000"
 简单洗漱过后，我快步离开宿舍楼，走在校园里宽敞的大道上，向着那个约定好的地点前进。 [w]
 道路的两侧种满了绿意葱茏的树木，许多学生们在树荫下忙碌地穿梭着。 [w]
 @wb canskip="true"
@@ -261,15 +260,14 @@
 @wact layer="stage"
 回想着记忆里葵那副呆呆的，却又总是那么真挚的模样，我的嘴角不禁浮现一丝微笑。刚才的紧张也随之烟消云散。 [w]
 @hidemes
-@fadepausebgm time="1000"
+@fadeoutbgm time="1000"
 @backlay
 @image layer="stage" page="back" storage="k1_playground" visible="true"
 @trans method="scroll" stay="stayback" time="2500"
 @wt
 @wb canskip="true"
 @showmes
-@resumebgm
-@fadebgm volume="100" time="1000"
+@fadeinbgm time="1000" storage="thecrowd"
 在将近一刻钟的步行后，我终于来到了芳甲大学的操场上。 [w]
 平时显得空旷的操场上如今被五颜六色的摊位点缀的满满当当，各个摊位旁边则是被看热闹的学生们围得水泄不通。 [w]
 身旁的摊位传来一阵欢呼，惹得不少路人驻足观看。 [w]
@@ -277,29 +275,31 @@
 @wb canskip="true"
 @主角
 （会在哪里呢——哦，找到了） [w]
+@fadeoutbgm time="1000"
 我环顾四周，不会吹灰之力就发现了我的目标。不，不如说找不到她反而比较难吧。 [w]
+@wb canskip="true"
 @backlay
 @image layer="stage" page="back" storage="k1_aoi_playground" visible="true"
-@trans method="crossfade" time="700"
-@wt
-@backlay
 @trans layer="base" time="500" method="crossfade"
 @action time="0" zoom="200" layer="stage" page="back" module="LayerNormalZoomModule"
 @wt
 @wact layer="stage"
 ;[TODO] 检查这一镜头的坐标
-@action start="0" end="500" time="16000" layer="stage" module="LayerLoopMoveYModule"
-粉色的长发从她的头上一直垂到腰间，一身洁白的洋装更是衬出了她的美丽。 [w]
-再加上脸上展露出的平静而又带着些许空灵的神情，她已然成为了周围人注目的焦点。 [w]
-不过，作为焦点的本人似乎并没有发现这一点，只是静静地站在那里，眺望着远处。 [w]
-@主角
-（这孩子，还真是长大了呢……） [w]
+@action start="0" end="500" time="10000" layer="stage" module="LayerLoopMoveYModule"
+@fadeinbgm time="1000" storage="aoi"
+@wait time="4000" canskip="true"
+@wb canskip="true"
 @stopaction layer="stage"
 @backlay
 @trans layer="base" time="500" method="crossfade"
 @action time="0" zoom="100" layer="stage" page="back" module="LayerNormalZoomModule"
 @wt
 @wact layer="stage"
+粉色的长发从她的头上一直垂到腰间，一身洁白的洋装更是衬出了她的美丽。 [w]
+再加上脸上展露出的平静而又带着些许空灵的神情，她已然成为了周围人注目的焦点。 [w]
+不过，作为焦点的本人似乎并没有发现这一点，只是静静地站在那里，眺望着远处。 [w]
+@主角
+（这孩子，还真是长大了呢……） [w]
 @backlay
 @image layer="stage" page="back" storage="k1_playground" visible="true"
 @trans time="50" method="crossfade"
@@ -331,6 +331,7 @@
 @主角
 （……果然还是没变啊。） [w]
 我摇了摇头，收起了思绪，顶着身旁其他学生的视线，向葵走去。 [w]
+@fadepausebgm time="1000"
 ;Transition
 @backlay
 @image layer="stage" page="back" storage="black" visible="true"
@@ -345,10 +346,14 @@
 @image left="512" page="back" layer="0" top="200" storage="aoi3_calm" visible="true"
 @trans time="500" method="crossfade"
 @wt
+@wb canskip="true"
+@resumebgm
+@fadebgm volume="100" time="1000"
 在简短的寒暄过后，我们两人并排走在操场的跑道上。 [w]
 刚才葵的声音好像引起了一点小骚动。不过幸运的是百团上吸引人眼球的东西实在是太多了，很快便没人再注意我们。 [w]
 不过，葵那突如其来的兴奋势头似乎并没有就此收住。 [w]
 自从我们汇合后，她就不断地向四周张望，并不停地提出“这是什么”“那是什么”的问题，简直像一个好奇的孩子。 [w]
+@wb canskip="true"
 @backlay
 @image left="512" page="back" layer="0" top="200" storage="aoi1_wakuwaku" visible="true"
 @trans time="500" method="crossfade"
@@ -421,6 +426,7 @@
 @endvo
 我们一起笑了起来。 [w]
 葵将视线转回台上正进行到高潮的表演，而我也将我的疑问吞回了肚里，与葵一起享受着演出。 [w]
+@fadeoutbgm time="1000"
 ;==Transition==
 @backlay
 @freeimage layer="0" page="back"
@@ -433,8 +439,11 @@
 @wt
 @backlay
 ;==End Transition==
+@wb canskip="true"
+@fadeinbgm storage="thecrowd" time="1000"
 我们二人继续走在喧闹的操场上。 [w]
 时间已然接近中午。耀眼的阳光径直洒落在露天的社团摊位上，但学生们的热情并没有因炎热的气温而受挫。 [w]
+@wb canskip="true"
 @backlay
 @image left="512" page="back" layer="0" top="200" storage="aoi2_calm" visible="true"
 @trans time="500" method="crossfade"
@@ -494,17 +503,20 @@
 @freeimage layer="0" page="back"
 @trans method="crossfade" time="700"
 @wt
-@stopbgm
+@fadeoutbgm time="2000"
 我和葵离开人声鼎沸的会场中心，来到相对冷清的一角。 [w]
 这里姑且也算是会场的一部分，但是被分配到这边的摊位似乎都是无人看管的“幽灵摊位”。 [w]
 也正因如此，几乎没什么人来到这边。四下的安静与方才的喧闹形成了鲜明的对比。 [w]
 我和葵挑了一个最里面的摊位，坐在遮阳棚下的塑料椅上开始休息。 [w]
+@wb canskip="true"
+@fadeinbgm time="1000" storage="aoi"
 @主角
 没想到芳甲里也有这种无人问津的社团。 [w]
 @backlay
 @image left="512" page="back" layer="0" top="200" storage="aoi1_smile" visible="true"
 @trans time="500" method="crossfade"
 @wt
+@wb canskip="true"
 @vo storage="K-1_dd362130_cn"
 @葵
 是啊，不过也是多亏了这些社团，我们才能找到地方休息。 [w]
@@ -611,6 +623,7 @@
 我们有一搭没一搭地聊着附近这些稀奇古怪的社团，试图猜出它们的活动内容。 [w]
 直到我们的体力都恢复得差不多了，这场愉快的对话才告一段落。 [w]
 @stopaction layer="stage"
+@fadeoutbgm time="1000"
 @backlay
 @trans layer="base" time="500" method="crossfade"
 @action time="0" zoom="100" layer="stage" page="back" module="LayerNormalZoomModule"
@@ -618,6 +631,7 @@
 @wact layer="stage"
 @主角
 好了，休息的也差不多了，我们继续吧。 [w]
+@wb canskip="true"
 @backlay
 @image left="512" page="back" layer="0" top="200" storage="aoi2_calm" visible="true"
 @trans time="500" method="crossfade"
@@ -645,11 +659,13 @@
 “魔法研究部”。 [w]
 @endvo
 …… [w]
+@fadeinbgm storage="joking" time="1000"
 听到这个闻所未闻的诡异的社团名称，我和葵一时都陷入了沉默。 [w]
 @backlay
 @image left="512" page="back" layer="0" top="200" storage="aoi3_wakuwaku" visible="true"
 @trans time="500" method="crossfade"
 @wt
+@wb canskip="true"
 @vo storage="K-1_7261e8e0_cn"
 @葵
 “魔法研究部”？原来真的有魔法啊~ [w]
@@ -709,8 +725,10 @@
 @image left="512" page="back" layer="0" top="200" storage="aoi3_calm" visible="true"
 @trans time="500" method="crossfade"
 @wt
+@vo storage="K-1_ceb5d420_cn"
 @葵
 （翻面）哦，背面还标注了社团活动室的位置—— [w]
+@endvo
 @npc id="传单"
 来到入名楼（最高的那个）I座10层，出电梯左拐左拐再左拐⊂('ω`⊂ [w]
 @npc id="传单"
@@ -719,7 +737,9 @@
 通向魔法世界的大门等待着你的开启|ω･)！ [w]
 传单最下方还贴心的用彩笔画了一张简单的示意图，活动室的位置上标着一个大大的六芒星。 [w]
 @主角
+@font size="60"
 不是，这文案抄袭得也太明显了吧！ [w]
+@resetfont
 我终究还是没能忍住我吐槽的欲望。不过葵用她的粗神经完全忽视了我的发言。 [w]
 @backlay
 @image left="512" page="back" layer="0" top="200" storage="aoi3_wakuwaku" visible="true"
@@ -746,10 +766,12 @@
 @主角
 这段很明显是抄袭的好吧！再说了，这里是三次元，又怎么会有魔法这种东西—— [w]
 正当我们争执不下的时候，一个声音插入了我们的对话。 [w]
+@fadepausebgm time="1000"
 @vo storage="K-1_f4cf5ab0_cn"
 @npc id="声音"
 请问—— [w]
 @endvo
+@wb canskip="true"
 我和葵这才从辩论中回过神来，转向声音的方向。 [w]
 @backlay
 @freeimage layer="0" page="back"
@@ -765,6 +787,8 @@
 @npc id="女生"
 这里就是魔法研究部吗？ [w]
 @endvo
+@resumebgm
+@fadebgm volume="100" time="1000"
 还没等我反应过来，葵就已经抢先一步做出了回答。 [w]
 @move time="200" path="(100, 260, 255)" layer="0"
 @wm
@@ -772,6 +796,7 @@
 @image left="924" page="back" layer="1" top="200" storage="aoi3_wakuwaku" visible="true"
 @trans time="500" method="crossfade"
 @wt
+@wb canskip="true"
 @vo storage="K-1_55ab41d0_cn"
 @葵
 是的，这儿就是魔法研究部的摊位！学妹你也对魔法感兴趣吗？ [w]
@@ -793,10 +818,12 @@
 @image left="100" page="back" layer="0" top="260" storage="mio2_calm" visible="true"
 @trans time="500" method="crossfade"
 @wt
+@fadeoutbgm time="1000"
 @vo storage="K-1_d0092990_cn"
 @npc id="女生"
 好啊。 [w]
 @endvo
+@wb canskip="true"
 女孩的双肩微微颤动起来，两支长长的马尾辫也随着她的动作而上下晃动。我开始觉得事情有些不妙。 [w]
 她猛地抬起头来，丢掉手里已经被捏成一团的小册子，瞪向葵，吼到—— [w]
 @backlay
