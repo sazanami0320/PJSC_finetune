@@ -177,7 +177,7 @@
 @move time="200" path="(100, 200, 255)" layer="0"
 @wm
 @backlay
-@image left="924" page="back" layer="1" top="260" storage="mio3_worried" visible="true"
+@image left="924" page="back" layer="1" top="260" storage="mio1_worried" visible="true"
 @trans time="500" method="crossfade"
 @wt
 @vo storage="K-2_cdca87f0_cn"
@@ -392,7 +392,7 @@
 @wt
 片刻后，刚才还在跟我赌气走在前面的葵又默默走回到我的身边。 [w]
 @backlay
-@image left="512" page="back" layer="0" top="200" storage="aoi2_smile" visible="true"
+@image left="512" page="back" layer="0" top="200" storage="aoi2_worried" visible="true"
 @trans time="500" method="crossfade"
 @wt
 @vo storage="K-2_bc860f00_cn"
@@ -508,6 +508,10 @@
 @主角
 可惜这里的天台可是上不去的哦。 [w]
 @vo storage="K-2_963af2b0_cn"
+@backlay
+@image left="512" page="back" layer="0" top="200" storage="aoi2_worried" visible="true"
+@trans time="500" method="crossfade"
+@wt
 @葵
 为什么啊？ [w]
 @endvo
@@ -744,7 +748,7 @@
 等一下，葵，我看看应该是往这边走吧... [w]
 正说着话，我突然感觉到自己的衣角被谁抓住了，回头一看，是葵。不知为什么，她有些害羞地撇开脸，细声说着什么。 [w]
 @backlay
-@image left="512" page="back" layer="0" top="200" storage="aoi3_smile" visible="true"
+@image left="512" page="back" layer="0" top="200" storage="aoi3_afraid" visible="true"
 @trans time="500" method="crossfade"
 @wt
 @vo storage="K-2_ba39b950_cn"
@@ -1857,17 +1861,25 @@
 @wm
 @wm
 @backlay
-@image left="974" page="back" layer="3" top="200" storage="aoi3_smile" visible="true"
+@image left="974" page="back" layer="3" top="200" storage="aoi3_nervous" visible="true"
 @trans time="500" method="crossfade"
 @wt
 @vo storage="K-2_26d58a70_cn"
 @葵
 啊？！不、不是的！灯学姐！ [w]
 @endvo
+@backlay
+@image left="974" page="back" layer="3" top="200" storage="aoi2_afraid" visible="true"
+@trans time="500" method="crossfade"
+@wt
 @vo storage="K-2_2bcb2b00_cn"
 @葵
 我、我和拓也不是……那个……我们只是……从小一起长大…… [w]
 @endvo
+@backlay
+@image left="974" page="back" layer="3" top="200" storage="aoi1_nervous" visible="true"
+@trans time="500" method="crossfade"
+@wt
 @vo storage="K-2_645c66b0_cn"
 @葵
 是、是好朋友！真的！ [w]
@@ -1886,7 +1898,8 @@
 @wt
 飞鸟学姐露出诡计得逞的微笑，高举双手大声宣布社团的成立。 [w]
 @backlay
-@image left="50" page="back" layer="0" top="145" storage="tomori1_wakuwaku" visible="true"
+@image left="50" page="back" layer="0" top="145" storage="tomori2_wakuwaku" visible="true"
+@image left="974" page="back" layer="3" top="200" storage="aoi2_surprised" visible="true"
 @trans time="500" method="crossfade"
 @wt
 @vo storage="K-2_3242cd50_cn"
