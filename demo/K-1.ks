@@ -302,8 +302,6 @@
 （这孩子，还真是长大了呢……） [w]
 @backlay
 @image layer="stage" page="back" storage="k1_playground" visible="true"
-@trans time="50" method="crossfade"
-@wt
 @trans method="crossfade" time="700"
 @wt
 @backlay
